@@ -1,6 +1,6 @@
  	
 //alert("hello");
-
+/*
 console.log("Liaqat");
 console.log(typeof 23);
 
@@ -25,3 +25,26 @@ let job2 = "teacher";
 console.log(myFirstJob);
 
 console.log(typeof job2);
+*/
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+
+
+console.log(typeof javascriptIsFun);
+console.log(typeof 23);
+ console.log(typeof 'Waqas');
+
+javascriptIsFun = 'YES!';
+console.log('Yes type is : ' + typeof javascriptIsFun);
+
+let year;
+console.log(year);
+console.log('year type is : ' + typeof year);
+
+year = 1988;
+console.log('year type after vale declaration : ' +  typeof year);
+
+console.log(typeof null);
+
+
+
