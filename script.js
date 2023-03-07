@@ -49,7 +49,7 @@ console.log(typeof null);
 */
 
 // let, const and var
-let age = 36;
+/* let age = 36;
 age = 31;
 console.log(age);
 console.log(typeof age);
@@ -65,5 +65,16 @@ job = 'teacher'
 lastName = 'Liaqat';
 console.log(lastName);
 const abc ="my DOB";
+
+*/
+
+//Data Type Conversion and Coercion
+console.log('9' - '5');
+
+
+     console.log( '19' - '13' + '17');
+     console.log(  '19' - '13' + 17);
+     console.log('123' < 57);
+     console.log( 5 + 6 + '4' + 9 - 4 - 2);
 
 
