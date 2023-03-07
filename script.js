@@ -69,12 +69,31 @@ const abc ="my DOB";
 */
 
 //Data Type Conversion and Coercion
+/*
 console.log('9' - '5');
+ console.log( '19' - '13' + '17');
+console.log(  '19' - '13' + 17);
+console.log('123' < 57);
+console.log( 5 + 6 + '4' + 9 - 4 - 2);
 
 
-     console.log( '19' - '13' + '17');
-     console.log(  '19' - '13' + 17);
-     console.log('123' < 57);
-     console.log( 5 + 6 + '4' + 9 - 4 - 2);
+*/
+
+
+
+// Basic Operators
+// Math operators
+const now = 2023;
+const agePerson = now - 1991;
+const ageXyz = now - 2018;
+console.log(agePerson, ageXyz);
+
+console.log(agePerson * 2, agePerson / 10, 2 ** 3);
+
+
+const firstName = 'Ali';
+const lastName = 'akram';
+console.log(firstName + ' ' + lastName);
+
 
 
