@@ -80,7 +80,7 @@ console.log( 5 + 6 + '4' + 9 - 4 - 2);
 
 
 
-*/
+
 // Basic Operators
 // Math operators
 const now = 2023;
@@ -113,3 +113,30 @@ console.log(ageXyz >= 18);
 const isFullAge = ageXyz >= 18;
 
 console.log(now - 1991 > now - 2018);
+*/
+
+
+// Strings and Template Literals
+const firstName = 'Waqas';
+const job = 'teacher';
+const birthYear = 1984;
+const year = 2023;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+console.log(jonas);
+
+const waqasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(waqasNew);
+
+console.log(`Just a regular string...`);
+
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String
+multiple
+lines`);
+
+
+
