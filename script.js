@@ -26,7 +26,8 @@ console.log(myFirstJob);
 
 console.log(typeof job2);
 */
-let javascriptIsFun = true;
+
+/* let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
 
@@ -45,6 +46,24 @@ year = 1988;
 console.log('year type after vale declaration : ' +  typeof year);
 
 console.log(typeof null);
+*/
 
+// let, const and var
+let age = 36;
+age = 31;
+console.log(age);
+console.log(typeof age);
+
+
+const birthYear = 1984;
+// birthYear = 1990;
+// const job;
+
+var job = 'programmer';
+job = 'teacher'
+
+lastName = 'Liaqat';
+console.log(lastName);
+const abc ="my DOB";
 
 
