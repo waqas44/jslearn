@@ -237,7 +237,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
   console.log('Someone else should drive...');
 }
 
-*/
+
 // The switch Statement
 const day = 'friday';
 
@@ -278,6 +278,38 @@ if (day === 'monday') {
 } else {
   console.log('Not a valid day!');
 }
+
+*/
+
+// Statements and Expressions
+3 + 4
+1991
+true && false && !false
+
+if (23 > 10) {
+  const str = '23 is bigger';
+}
+
+const me = 'waqas';
+console.log(`I'm ${2037 - 1991} years old ${me}`);
+
+////////////////////////////////////
+// The Conditional (Ternary) Operator
+const age = 23;
+// age >= 18 ? console.log('I like to drink juice 🍷') : console.log('I like to drink water 💧');
+
+const drink = age >= 18 ? 'juice 🍷' : 'water 💧';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = 'juice 🍷';
+} else {
+  drink2 = 'water 💧';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'juice 🍷' : 'water 💧'}`);
 
 
 
