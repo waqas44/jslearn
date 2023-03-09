@@ -327,7 +327,7 @@ if (hasDriversLicense) console.log('I can drive :D');
 // const private = 534;
 */
 
-
+/*
 // Functions
 function logger() {
   console.log('My name is Waqas');
@@ -368,4 +368,27 @@ const calcAge2 = function (birthYeah) {
 const age2 = calcAge2(1991);
 
 console.log(age1, age2);
+
+*/
+
+// Arrow functions
+
+const calcAge3 = birthYeah => 2037 - birthYeah;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYeah, firstName) => {
+  const age = 2037 - birthYeah;
+  const retirement = 65 - age;
+  // return retirement;
+  return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(1991, 'waqas')); console.log(yearsUntilRetirement(1980, 'akram'));
+
+
+
+
+
+
 
