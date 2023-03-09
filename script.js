@@ -387,7 +387,6 @@ const yearsUntilRetirement = (birthYeah, firstName) => {
 console.log(yearsUntilRetirement(1991, 'waqas')); console.log(yearsUntilRetirement(1980, 'akram'));
 
 
-*/
 
 // Functions Calling inside other Functions
 function cutFruitPieces(fruit) {
@@ -403,6 +402,40 @@ function fruitProcessor(apples, oranges) {
 }
 console.log(fruitProcessor(2, 3));
 
+
+*/
+
+// Basic Array Operations (Methods)
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add elements
+const newLength = friends.push('waqas');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('liaqat');
+console.log(friends);
+
+// Remove elements
+friends.pop(); // Last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // First
+console.log(friends);
+
+console.log(friends.indexOf('akram '));
+console.log(friends.indexOf('asghar'));
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('Steven')) {
+  console.log('You have a friend called Steven');
+}
 
 
 
