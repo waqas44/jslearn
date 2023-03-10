@@ -404,7 +404,7 @@ console.log(fruitProcessor(2, 3));
 
 
 */
-
+/*
 // Basic Array Operations (Methods)
 const friends = ['Michael', 'Steven', 'Peter'];
 
@@ -436,6 +436,25 @@ console.log(friends.includes(23));
 if (friends.includes('Steven')) {
   console.log('You have a friend called Steven');
 }
+*/
+// Objects Testing
+const jonasArray = [
+  'Waqas  ',
+  'Liaqat',
+  2037 - 1991,
+  'teacher',
+  ['Akram', 'Asghar', 'Ahmad']
+];
+
+const jonas = {
+  firstName: 'waqas',
+  lastName: 'Liaqat',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Akram', 'Asghar', 'Ahmad']
+};
+
+
 
 
 
