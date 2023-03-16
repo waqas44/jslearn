@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Chapter 2</title>
+	
+   <script src="script.js"></script>
+</head>
+<body>
+
+
+
+    <h1>JavaScript Fundamentals – Part 2</h1>
+    <h1>Check the script.js for code</h1>
+
+</body>
+<script type="text/javascript">
+	
+
+//Calculation the better averge weight of the user, winner will be with higher score 
+const akr = {
+  fullName: 'akram karim',
+  weight: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.weight / this.height ** 2;
+    return this.bmi;
+  }
+};
+
+const ahm = {
+  fullName: 'Ahmad ali',
+  weight: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.weight / this.height ** 2;
+    return this.bmi;
+  }
+};
+
+akr.calcBMI();
+ahm.calcBMI();
+
+console.log(akr.bmi, ahm.bmi);
+
+// "John Smith's BMI (28.3) is higher than akr Miller's (23.9)!"
+
+if (akr.bmi > ahm.bmi) {
+  console.log(`${akr.fullName}'s BMI (${akr.bmi}) is higher than ${ahm.fullName}'s BMI (${ahm.bmi})`)
+} else if (ahm.bmi > akr.bmi) {
+  console.log(`${ahm.fullName}'s BMI (${ahm.bmi}) is higher than ${akr.fullName}'s BMI (${akr.bmi})`)
+}
+
+
+</script>
+
+</html>
