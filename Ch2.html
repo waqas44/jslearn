@@ -170,7 +170,7 @@ while (dice !== 6) {
   if (dice === 6) console.log('Loop is about to end...');
 }
 */
-
+/*
 // Bill calculation coding challange and adding tip based on total bill
 
 const calcTip = function (bill) {
@@ -199,8 +199,38 @@ console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
 
+*/
 
+// Dot vs. Bracket Notation
+const waqas = {
+  firstName: 'waqas',
+  lastName: 'Liaqat',
+  age: 2034 - 1984,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven']
+};
+console.log(waqas);
 
+console.log(waqas.lastName);
+console.log(waqas['lastName']);
+
+const nameKey = 'Name';
+console.log(waqas['first' + nameKey]);
+console.log(waqas['last' + nameKey]);
+
+// console.log(waqas.'last' + nameKey)
+
+const interestedIn = prompt('What do you want to know about waqas? Choose between firstName, lastName, age, job, and friends');
+
+if (waqas[interestedIn]) {
+  console.log(waqas[interestedIn]);
+} else {
+  console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+}
+
+waqas.location = 'Pak';
+waqas['twitter'] = '@twitter';
+console.log(waqas);
 </script>
 
 </html>
