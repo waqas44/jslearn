@@ -44,7 +44,7 @@ ahm.calcBMI();
 
 console.log(akr.bmi, ahm.bmi);
 
-// "John Smith's BMI (28.3) is higher than akr Miller's (23.9)!"
+// "aslam Smith's BMI (28.3) is higher than akr Miller's (23.9)!"
 
 if (akr.bmi > ahm.bmi) {
   console.log(`${akr.fullName}'s BMI (${akr.bmi}) is higher than ${ahm.fullName}'s BMI (${ahm.bmi})`)
@@ -232,7 +232,7 @@ waqas.location = 'Pak';
 waqas['twitter'] = '@twitter';
 console.log(waqas);
 
-*/
+
 
 // Object Methods
 
@@ -268,6 +268,47 @@ console.log(waqas.calcAge());
 console.log(waqas.age);
 console.log(waqas.age);
 console.log(waqas.age);
+
+
+
+*/
+
+
+
+// weight calculation coding challegin and better aerage will be winner
+const akram = {
+  fullName: 'Akram ali',
+  mass: 75,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  }
+};
+
+const aslam = {
+  fullName: 'aslam Smith',
+  mass: 95,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  }
+};
+
+akram.calcBMI();
+aslam.calcBMI();
+
+console.log(akram.bmi, aslam.bmi);
+
+// "aslam Smith's BMI (28.3) is higher than akram Miller's (23.9)!"
+
+if (akram.bmi > aslam.bmi) {
+  console.log(`${akram.fullName}'s BMI (${akram.bmi}) is higher than ${aslam.fullName}'s BMI (${aslam.bmi})`)
+} else if (aslam.bmi > akram.bmi) {
+  console.log(`${aslam.fullName}'s BMI (${aslam.bmi}) is higher than ${akram.fullName}'s BMI (${akram.bmi})`)
+}
+
 
 </script>
 
