@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Code revision</title>
+	
+   <!-- <script src="script.js"></script> -->
+</head>
+<body>
+
+
+
+    <h1>JavaScript Fundamentals – Part 1</h1>
+    <h1>Check the script.js for code</h1>
+
+</body>
+<script type="text/javascript">
+	console.log('Testing')
+
+let calctip = function (arr) {
+
+return  arr >= 100 && arr <= 300 ? arr*.10 : arr*.20;
+}
+//bill => 100 ? b
+const tips= [];
+const totals =[];
+var bills =[20,50,80,120,160,200,240,280]
+
+for (i=0; i < bills.length; i++){ 
+ let counter = 'bill value ';
+
+	counter +=  bills[i];
+	console.log(counter);
+	tip = calctip(bills[i]);
+	tips.push(tip);
+	totals.push(bills[i] + tip);
+
+
+}
+console.log(tips, totals);
+	//arrow function simple
+
+//tip => 23 ? console.log('small') : console.log('Large');
+// const calcAge3 = birthYeah => 2023 - birthYeah;
+// console.log(calcAge3 (1984));
+
+</script>
+
+
+</html>
