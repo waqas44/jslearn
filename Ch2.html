@@ -13,10 +13,11 @@
 
     <h1>JavaScript Fundamentals – Part 2</h1>
     <h1>Check the script.js for code</h1>
+    <div id="rvar"> </div>
 
 </body>
 <script type="text/javascript">
-	
+
 /*
 //Calculation the better averge weight of the user, winner will be with higher score 
 const akr = {
@@ -321,11 +322,13 @@ const jonas = [
   ['Michael', 'Peter', 'Steven'],
   true
 ];
+let sum ="";
 
 for (let i=jonas.length-1; i >= 0; i--){
 
 
   console.log (jonas[i]);
+   document.getElementById('rvar').innerHTML += '<p>' + jonas[i] +'</p>';
 }
 
 </script>
