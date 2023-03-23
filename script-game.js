@@ -2,7 +2,7 @@
 //let elm = document.querySelector('.message');
 //let elm = document.querySelector('.message').textContent = 'New message here';
 
-document.querySelector('.number').textContent = 13;
+document.querySelector('.number').textContent = '';
 
 document.querySelector('.score').textContent = 20;
 
@@ -13,7 +13,7 @@ document.querySelector('.score').textContent = 20;
 //     document.querySelector('.guess').value = 17;
 
 // });
-
+let number1 = Math.trunc(Math.random() * 20);
 document.querySelector('.check').addEventListener('click', function () {
 
 
@@ -26,8 +26,8 @@ document.querySelector('.check').addEventListener('click', function () {
     }
 });
 
-
-
+console.log(number1);
+document.querySelector('.number').textContent = number1;
 //console.log(elm)
 //console.log(document.querySelector('.message'));
 
