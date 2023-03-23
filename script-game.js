@@ -23,7 +23,19 @@ document.querySelector('.check').addEventListener('click', function () {
         let num = document.querySelector('.message').textContent = 'No Number !';
         console.log(num);
 
+    } else if (guess === number1) {
+        let num = document.querySelector('.message').textContent = 'correct number';
+        document.querySelector('body');
     }
+    else if (guess > number1) {
+        let num = document.querySelector('.message').textContent = 'Too High';
+
+    }
+    else if (guess < number1) {
+        let num = document.querySelector('.message').textContent = 'Too Low';
+
+    }
+
 });
 
 console.log(number1);
