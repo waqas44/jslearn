@@ -2,9 +2,9 @@
 //let elm = document.querySelector('.message');
 //let elm = document.querySelector('.message').textContent = 'New message here';
 
-document.querySelector('.number').textContent = '';
+// document.querySelector('.number').textContent = '';
 
-document.querySelector('.score').textContent = 20;
+// document.querySelector('.score').textContent = 20;
 
 // document.querySelector('.guess').value = 15;
 // document.querySelector('.check').addEventListener('click', function () {
@@ -13,7 +13,8 @@ document.querySelector('.score').textContent = 20;
 //     document.querySelector('.guess').value = 17;
 
 // });
-let number1 = Math.trunc(Math.random() * 20);
+let number1 = Math.trunc(Math.random() * 20) + 1;
+let score = 20;
 document.querySelector('.check').addEventListener('click', function () {
 
 
@@ -25,15 +26,19 @@ document.querySelector('.check').addEventListener('click', function () {
 
     } else if (guess === number1) {
         let num = document.querySelector('.message').textContent = 'correct number';
-        document.querySelector('body');
+        document.querySelector('body').style.backgroundColor = 'green';
+        document.querySelector('.highscore').textContent = score;
     }
     else if (guess > number1) {
         let num = document.querySelector('.message').textContent = 'Too High';
 
+        score--;
+        document.querySelector('.score').textContent = score;
     }
     else if (guess < number1) {
         let num = document.querySelector('.message').textContent = 'Too Low';
-
+        score--;
+        document.querySelector('.score').textContent = score;
     }
 
 });
