@@ -15,6 +15,9 @@
 // });
 let number1 = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
+const displayMessage = function (message) {
+    document.querySelector('.message').textContent = message;
+};
 document.querySelector('.check').addEventListener('click', function () {
 
 
@@ -26,6 +29,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
     } else if (guess === number1) {
         let num = document.querySelector('.message').textContent = 'correct number';
+        document.querySelector('.number').textContent = number1;
         document.querySelector('body').style.backgroundColor = 'green';
         document.querySelector('.highscore').textContent = score;
         //document.querySelector('.check').style.display = 'none';
@@ -66,7 +70,7 @@ document.querySelector('.number').textContent = number1;
 //console.log(document.querySelector('.guess').value);
 document.querySelector('.again').addEventListener('click', function () {
     score = 20;
-    secretNumber = Math.trunc(Math.random() * 20) + 1;
+    number1 = Math.trunc(Math.random() * 20) + 1;
 
     // document.querySelector('.message').textContent = 'Start guessing...';
     displayMessage('Start guessing...');
