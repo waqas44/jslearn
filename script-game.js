@@ -28,18 +28,33 @@ document.querySelector('.check').addEventListener('click', function () {
         let num = document.querySelector('.message').textContent = 'correct number';
         document.querySelector('body').style.backgroundColor = 'green';
         document.querySelector('.highscore').textContent = score;
+        //document.querySelector('.check').style.display = 'none';
     }
     else if (guess > number1) {
-        let num = document.querySelector('.message').textContent = 'Too High';
+        if (score > 0) {
+            let num = document.querySelector('.message').textContent = 'Too High';
 
-        score--;
-        document.querySelector('.score').textContent = score;
+            score--;
+            document.querySelector('.score').textContent = score;
+        } else {
+            document.querySelector('.message').textContent = 'You Lost';
+        }
+
     }
     else if (guess < number1) {
-        let num = document.querySelector('.message').textContent = 'Too Low';
-        score--;
-        document.querySelector('.score').textContent = score;
+        if (score > 0) {
+            let num = document.querySelector('.message').textContent = 'Too Low';
+            score--;
+            document.querySelector('.score').textContent = score;
+        } else {
+            document.querySelector('.message').textContent = 'You Lost';
+        }
+
     }
+});
+document.querySelector('.check').addEventListener('click', function () {
+
+
 
 });
 
