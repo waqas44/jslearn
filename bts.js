@@ -1,7 +1,7 @@
 'use strict';
 
 // Scoping in Practice
-
+/*
 function calcAge(birthYear) {
     const age = 2037 - birthYear;
 
@@ -38,3 +38,17 @@ const firstName = 'Jonas';
 calcAge(1991);
 // console.log(age);
 // printAge();
+
+*/
+
+// Hoisting and TDZ in Practice
+
+// Variables
+console.log(me);
+// console.log(job);
+// console.log(year);
+
+var me = 'waqas';
+let job = 'teacher';
+const year = 1984;
+
