@@ -52,3 +52,20 @@ var me = 'waqas';
 let job = 'teacher';
 const year = 1984;
 
+
+
+// Functions
+console.log(addDecl(5, 7));
+// console.log(addExpr(2, 3));
+console.log(addArrow);
+// console.log(addArrow(2, 3));
+
+function addDecl(a, b) {
+    return a + b;
+}
+
+const addExpr = function (a, b) {
+    return a + b;
+};
+
+var addArrow = (a, b) => a + b;
