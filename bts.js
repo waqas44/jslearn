@@ -89,6 +89,7 @@ console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
 */
+/*
 // The this Keyword in Practice
 console.log(this);
 
@@ -123,3 +124,29 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f();
+*/
+
+// Regular Functions vs. Arrow Functions
+
+
+
+// var firstName = 'Matilda';
+
+const jonas = {
+    firstName: 'Jonas',
+    year: 1991,
+    calcAge: function () {
+        // console.log(this);
+        console.log(2037 - this.year);
+
+
+    },
+
+    greet: () => {
+        console.log(this);
+        console.log(`Hey ${this.firstName}`);
+    },
+};
+jonas.greet();
+jonas.calcAge();
+
