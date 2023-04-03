@@ -209,4 +209,14 @@ let oldLastName = lastName;
 lastName = 'Liaqat';
 console.log(lastName, oldLastName);
 
-
+// Reference types
+const jessica = {
+    firstName: 'Saba',
+    lastName: 'Waqas',
+    age: 27,
+};
+const marriedJessica = jessica;
+marriedJessica.lastName = 'waqas';
+console.log('Before marriage:', jessica);
+console.log('After marriage: ', marriedJessica);
+  // marriedJessica = {};
