@@ -179,7 +179,7 @@ var addArrow = (a, b) => {
     return a + b;
 };
 addArrow(2, 5, 8);
-*/
+
 
 // Objects vs. primitives
 
@@ -198,3 +198,15 @@ const friend = me;
 friend.age = 27;
 console.log('Friend:', friend);
 console.log('Me', me);
+
+*/
+
+// Primitives vs. Objects in Practice
+
+// Primitive types
+let lastName = 'Waqas';
+let oldLastName = lastName;
+lastName = 'Liaqat';
+console.log(lastName, oldLastName);
+
+
