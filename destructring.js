@@ -6,10 +6,10 @@ const b = arr[1];
 const c = arr[2];
 const [x, y, z] = arr;
 console.log(x, y, z);
-console.log(arr);
+// console.log(arr);
 
 const arr2 = ['text1', 'text 2', 'text 3'];
-console.log(arr2);
+// console.log(arr2);
 const [x1, y1, z1] = arr2;
 console.log(x1, y1, z1);
 
