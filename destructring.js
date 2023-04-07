@@ -1,4 +1,5 @@
 'use strict';
+/*
 // Destructuring Arrays
 const arr = [2, 3, 4];
 const a = arr[0];
@@ -37,5 +38,14 @@ console.log(main, secondary);
 console.log('old');
 
 // Receive 2 return values from a function
+console.log(restaurant.order(2, 0));
 const [starter, mainCourse] = restaurant.order(2, 0);
 console.log(starter, mainCourse);
+*/
+
+// Nested destructuring
+const nested = [2, 4, [5, 6]];
+const [i1, w1, j1] = nested;
+//const [i, , [j, k]] = nested;
+//console.log(i, j, k);
+console.log(i1, w1, j1);
