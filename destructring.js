@@ -77,7 +77,7 @@ const mainMenuCopy = [...restaurant.mainMenu];
 // Join 2 arrays
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
-*/
+
 
 // Iterables: arrays, strings, maps, sets. NOT objects
 const str = 'Jonas';
@@ -85,3 +85,12 @@ const letters = [...str, ' ', 'S.'];
 console.log(letters);
 console.log(...str);
 console.log(`${letters} Schmedtmann`);
+*/
+
+// Real-world example
+const ingredients = [
+    prompt("Let's make pasta! Ingredient 1?"),
+    prompt('Ingredient 2?'),
+    prompt('Ingredient 3'),
+];
+console.log(ingredients);
