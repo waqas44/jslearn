@@ -42,10 +42,18 @@ console.log(restaurant.order(2, 0));
 const [starter, mainCourse] = restaurant.order(2, 0);
 console.log(starter, mainCourse);
 */
-
+/*
 // Nested destructuring
 const nested = [2, 4, [5, 6]];
 const [i1, w1, j1] = nested;
 //const [i, , [j, k]] = nested;
 //console.log(i, j, k);
 console.log(i1, w1, j1);
+*/
+
+// The Spread Operator (...)
+
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+
