@@ -83,3 +83,5 @@ console.log(menu);
 const str = 'Jonas';
 const letters = [...str, ' ', 'S.'];
 console.log(letters);
+console.log(...str);
+console.log(`${letters} Schmedtmann`);
